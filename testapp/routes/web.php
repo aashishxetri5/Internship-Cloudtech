@@ -27,10 +27,6 @@ Route::prefix('user')->group(function () {
     })->name('userGreet');
 });
 
-Route::get("/home", function () {
-    return "Welcome to home page of this app";
-});
-
 # This route sends the number and the view gives table(1-10) of that number.
 Route::get('/table/{number?}', function ($number = 2) {
     return view('table', ['number' => $number]);
@@ -59,3 +55,10 @@ Route::post('/login', [UserController::class, 'verifyCredentials']);
 
 
 Route::get("/logout", [UserController::class, "logoutUser"]);
+
+
+
+# for blade demonstration
+Route::get("/home", function () {
+    return view('home');    
+});
