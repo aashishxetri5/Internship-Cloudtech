@@ -4,6 +4,7 @@ import ChangeStatus from './components/ChangeStatus.vue';
 import Home from './components/Home.vue';
 import ModalBinding from './components/ModalBinding.vue';
 import Show from './components/Show.vue';
+import TodoList from './components/TodoList.vue';
 
 
 const link = 'https://www.google.com';
@@ -11,7 +12,7 @@ const link = 'https://www.google.com';
 </script>
 
 <template>
-  <ChangeStatus />
+  <!-- <ChangeStatus />
   <div>
     <Home />
     <p>
@@ -19,5 +20,9 @@ const link = 'https://www.google.com';
     </p>
   </div>
   <ModalBinding />
-  <Show />
+  <Show /> -->
+
+
+  <TodoList />
+
 </template>
