@@ -18,7 +18,7 @@ $desktop-breakpoint: 45rem;
 
 /* Base Styles */
 
-* {
+.todoooo * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -28,7 +28,7 @@ html {
   font-size: 62.5%;
 }
 
-body {
+.todoooo {
     background: #2B292E;
   color: #fafafa;
   font-family: Helvetica, Arial, sans-serif;
@@ -101,8 +101,12 @@ a {
     height: 3rem;
     margin-right: 1.6rem;
     padding: .4rem .8rem;
+    background-color: whitesmoke !important;
 }
 
+.input::placeholder{
+    color: #555;
+}
 .checkbox {
     display: flex;
     align-items: baseline;

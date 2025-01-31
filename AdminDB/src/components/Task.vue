@@ -48,11 +48,11 @@ const deleteTask = (index) => {
     </div>
 </template>
 
-<style scoped>
-.complete {
+<!-- <style scoped>
+.complete{
     background-color: aqua;
     font-size: .9rem;
     padding: 2px 5px;
     border-radius: 5px;
 }
-</style>
+</style> -->

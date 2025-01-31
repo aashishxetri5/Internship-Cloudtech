@@ -23,23 +23,23 @@ const content = "AdminDB";
         </header>
         <div>
             <p>Change Status</p>
-            <button v-on:click="status = 'active'">Active</button>
-            <button @click="status = 'inactive'">Inactive</button>
-            <button @click="status = 'loading'">Loading</button>
+            <button class="px-3 py-2 me-4 bg-blue-500 text-white" v-on:click="status = 'active'">Active</button>
+            <button class="px-3 py-2 me-4 bg-blue-500 text-white" @click="status = 'inactive'">Inactive</button>
+            <button class="px-3 py-2 me-4 bg-blue-500 text-white" @click="status = 'loading'">Loading</button>
         </div>
     </div>
 </template>
 
 <style scoped>
 .title {
-  color: red;
-  font-size: 20px;
-  font-weight: bold;
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 #logo {
-  color: blue;
-  font-size: 16px;
-  font-weight: bold;
+    color: blue;
+    font-size: 16px;
+    font-weight: bold;
 }
 </style>

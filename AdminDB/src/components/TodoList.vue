@@ -55,6 +55,7 @@ const handleKeydown = (e) => {
     }
 }
 
+
 onMounted(() => {
     document.querySelector("input").focus();
 });
@@ -76,7 +77,7 @@ defineExpose({ addTask });
 </script>
 
 <template>
-    <div class="">
+    <div class="todoooo min-h-screen">
         <div class="container">
             <h1 class="header_title">To-do App</h1>
             <h2 class="header_subtitle">What do you need to do?</h2>
@@ -113,8 +114,10 @@ defineExpose({ addTask });
                 <!-- status should be false to show how many todo left -->
                 <h2 class="list-title">You have {{ tasks.length || 0 }} todos</h2>
             </div>
-            <Task v-for="(task, index) in tasksToDisplay" :task="task" :key="index" :index="index"
-                @remove-task="deleteTask" />
+            <div class="overflow-y-scroll min-h-32 max-h-96">
+                <Task v-for="(task, index) in tasksToDisplay" :task="task" :key="index" :index="index"
+                    @remove-task="deleteTask" />
+            </div>
 
             <form id="new-todo" @submit.prevent="addTask">
                 <input type="text" class="input" placeholder="Something to do" name="task">
@@ -123,5 +126,3 @@ defineExpose({ addTask });
         </div>
     </div>
 </template>
-
-<style></style>

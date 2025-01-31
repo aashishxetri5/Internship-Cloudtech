@@ -7,8 +7,9 @@ const changeVisibility = () => {
 </script>
 
 <template>
-    <div class="">
-        <button v-on:click="changeVisibility()" v-text="isVisible ? 'Hide Text' : 'Show Text'"></button>
+    <div class="ps-12 pt-12">
+        <button class="px-3 py-2 rounded-lg bg-blue-500 text-white" v-on:click="changeVisibility()"
+            v-text="isVisible ? 'Hide Text' : 'Show Text'"></button>
         <div class="" style="width: 300px;" v-show="isVisible">
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Provident quam pariatur laboriosam adipisci
